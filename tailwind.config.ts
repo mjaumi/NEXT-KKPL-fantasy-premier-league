@@ -11,11 +11,13 @@ const config: Config = {
       fontFamily: {
         poppins: ['var(--font-poppins)'],
       },
-      backgroundImage: {
-        'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
-        'gradient-conic':
-          'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
-      },
+      colors: {
+        'KKPL-dark-purple': '#271B5B',
+        'KKPL-dark-blue': '#10044A',
+        'KKPL-light-blue': '#00B1E5',
+        'KKPL-light-red': '#EE2364',
+        'KKPL-dark-gray': '#262D4A',
+      }
     },
   },
   plugins: [],
