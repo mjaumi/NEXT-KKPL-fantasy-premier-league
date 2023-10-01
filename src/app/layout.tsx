@@ -28,10 +28,10 @@ export default function RootLayout({
   return (
     <html lang='en'>
       <body
-        className={`${poppins.variable} font-poppins bg-KKPL-dark-blue text-white min-h-screen`}
+        className={`${poppins.variable} font-poppins bg-KKPL-dark-blue text-white`}
       >
         <Header />
-        {children}
+        <main className='p-24 min-h-screen'>{children}</main>
         <Footer />
       </body>
     </html>
