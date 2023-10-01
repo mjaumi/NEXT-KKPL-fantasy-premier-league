@@ -1,5 +1,7 @@
 import React from 'react';
 import NavItem from './NavItem';
+import NavDropdownItem from './NavDropdownItem';
+import KKPLButton from '../shared/KKPLButton';
 
 const Header = () => {
   // rendering the header component here
@@ -11,13 +13,22 @@ const Header = () => {
           <span className='text-KKPL-light-blue text-base'>PL</span>
         </h1>
 
-        <nav>
-          <NavItem>Create</NavItem>
-          <NavItem>Matches</NavItem>
-          <NavItem>Results</NavItem>
-          <NavItem>Stats</NavItem>
-          <NavItem>points table</NavItem>
-          <NavItem>Teams</NavItem>
+        <nav className='flex items-center space-x-5'>
+          <NavDropdownItem menu={['season', 'player', 'team']}>
+            Create
+          </NavDropdownItem>
+          <NavItem href='/matches'>Matches</NavItem>
+          <NavItem href='/results'>Results</NavItem>
+          <NavItem href='/statistics'>Stats</NavItem>
+          <NavItem href='/point-table'>points table</NavItem>
+          <NavItem href='/teams'>Teams</NavItem>
+
+          <KKPLButton
+            bgColor='border-KKPL-light-blue after:bg-KKPL-light-blue'
+            additionalClassNames='py-2'
+          >
+            log in
+          </KKPLButton>
         </nav>
       </div>
     </header>

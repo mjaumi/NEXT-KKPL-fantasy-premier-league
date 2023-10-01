@@ -16,7 +16,8 @@ const config: Config = {
         'KKPL-dark-blue': '#10044A',
         'KKPL-light-blue': '#00B1E5',
         'KKPL-light-red': '#EE2364',
-        'KKPL-dark-gray': '#262D4A',
+        'KKPL-dark-grey': '#262D4A',
+        'KKPL-light-grey': '#E0DDDC',
       }
     },
   },
