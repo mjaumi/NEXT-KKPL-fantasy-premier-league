@@ -21,7 +21,11 @@ const ComingUpNext = () => {
         <div className='flex flex-col md:flex-row justify-between md:w-5/6 xl:w-4/6 mx-auto space-y-5 md:space-y-0'>
           <div className='min-h-full flex flex-col justify-between'>
             <div className='w-[100px] lg:w-[200px] mx-auto'>
-              <KKPLImage src='/assets/images/khulna.png' alt='khulna logo' />
+              <KKPLImage
+                src='/assets/images/khulna.png'
+                alt='khulna logo'
+                priority
+              />
             </div>
             <h3 className='mt-5 text-center text-lg lg:text-2xl font-light'>
               Khulna <br /> Chingris
@@ -44,7 +48,11 @@ const ComingUpNext = () => {
 
           <div className='min-h-full flex flex-col justify-between'>
             <div className='w-[100px] lg:w-[200px] mx-auto'>
-              <KKPLImage src='/assets/images/natore.png' alt='Natore logo' />
+              <KKPLImage
+                src='/assets/images/natore.png'
+                alt='Natore logo'
+                priority
+              />
             </div>
             <h3 className='mt-5 text-center text-lg lg:text-2xl font-light'>
               Natore <br /> Kachagollas

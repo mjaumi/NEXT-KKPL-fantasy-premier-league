@@ -5,9 +5,10 @@ import React from 'react';
 interface IImage {
   src: string;
   alt: string;
+  priority: boolean;
 }
 
-const KKPLImage = ({ src, alt }: IImage) => {
+const KKPLImage = ({ src, alt, priority }: IImage) => {
   // rendering the image component here for abstraction purpose
   return (
     <Image
@@ -16,6 +17,7 @@ const KKPLImage = ({ src, alt }: IImage) => {
       height={0}
       width={0}
       sizes='100%'
+      priority={priority}
       alt={alt}
     />
   );

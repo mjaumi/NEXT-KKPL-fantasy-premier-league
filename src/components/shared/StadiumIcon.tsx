@@ -9,8 +9,8 @@ const StadiumIcon = ({ className }: { className: string }) => {
       viewBox='0 0 60000 75000'
       x='0px'
       y='0px'
-      fill-rule='evenodd'
-      clip-rule='evenodd'
+      fillRule='evenodd'
+      clipRule='evenodd'
       className={className}
     >
       <defs>
