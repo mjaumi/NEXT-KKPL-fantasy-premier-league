@@ -13,7 +13,7 @@ const NavItem = ({ children, href }: INavButton) => {
   return (
     <Link
       href={href}
-      className='uppercase font-bold cursor-pointer hover:text-KKPL-light-red duration-300'
+      className='block uppercase font-bold cursor-pointer hover:text-KKPL-light-red duration-300'
     >
       {children}
     </Link>

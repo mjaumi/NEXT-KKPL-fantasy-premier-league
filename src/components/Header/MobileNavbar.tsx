@@ -1,20 +1,24 @@
-import React from 'react';
+'use client';
+
+import React, { useState } from 'react';
 import NavItem from './NavItem';
-import MobileNavbar from './MobileNavbar';
+import { HiMenuAlt1 } from 'react-icons/hi';
 import KKPLButton from '../shared/KKPLButton';
 import NavDropdownItem from './NavDropdownItem';
 
-const Header = () => {
-  // rendering the header component here
-  return (
-    <header className='fixed top-0 bg-KKPL-dark-purple h-20 w-full'>
-      <div className='w-[90%] lg:w-4/5 mx-auto flex items-center justify-between h-full max-w-[1500px]'>
-        <h1 className='text-KKPL-light-red font-extrabold text-2xl'>
-          KK
-          <span className='text-KKPL-light-blue text-base'>PL</span>
-        </h1>
+const MobileNavbar = () => {
+  // integration of react hooks here
+  const [isShowMenu, setIsShowMenu] = useState<boolean>(false);
 
-        <nav className='hidden lg:flex items-center space-x-5'>
+  // rendering navbar for mobile component here
+  return (
+    <nav className='lg:hidden flex items-center space-x-5'>
+      <button onClick={() => setIsShowMenu((state) => !state)}>
+        <HiMenuAlt1 className='h-7 w-7 text-KKPL-light-blue' />
+      </button>
+
+      {isShowMenu && (
+        <div className='absolute p-4 space-y-2 flex flex-col items-center left-0 top-0 w-full border'>
           <NavDropdownItem menu={['season', 'player', 'team']}>
             Create
           </NavDropdownItem>
@@ -30,12 +34,10 @@ const Header = () => {
           >
             log in
           </KKPLButton>
-        </nav>
-
-        <MobileNavbar />
-      </div>
-    </header>
+        </div>
+      )}
+    </nav>
   );
 };
 
-export default Header;
+export default MobileNavbar;

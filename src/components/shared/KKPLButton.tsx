@@ -25,7 +25,7 @@ const KKPLButton = ({
         bgColor ? bgColor : 'border-KKPL-light-red after:bg-KKPL-light-red'
       } ${additionalClassNames}`}
     >
-      <span className='relative flex items-center z-10 space-x-2'>
+      <span className='relative flex justify-center items-center z-10 space-x-2'>
         {children}
       </span>
     </button>
