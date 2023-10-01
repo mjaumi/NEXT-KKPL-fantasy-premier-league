@@ -9,7 +9,7 @@ const config: Config = {
   theme: {
     extend: {
       fontFamily: {
-        poppins: ['var(--font-poppins)'],
+        poppins: ['poppins', 'sans-serif'],
       },
       colors: {
         'KKPL-dark-purple': '#271B5B',

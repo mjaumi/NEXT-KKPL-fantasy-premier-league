@@ -1,16 +1,7 @@
 import Header from '@/components/Header/Header';
 import './globals.css';
 import type { Metadata } from 'next';
-import { Poppins } from 'next/font/google';
 import Footer from '@/components/Footer/Footer';
-
-// defining the font's data here
-const poppins = Poppins({
-  subsets: ['latin'],
-  weight: ['100', '200', '300', '400', '500', '600', '700', '800', '900'],
-  display: 'swap',
-  variable: '--font-poppins',
-});
 
 // defining the root metadata here
 export const metadata: Metadata = {
@@ -27,9 +18,7 @@ export default function RootLayout({
   // rendering the root layout here
   return (
     <html lang='en'>
-      <body
-        className={`${poppins.variable} font-poppins bg-KKPL-dark-blue text-white`}
-      >
+      <body className='font-poppins bg-KKPL-dark-blue text-white'>
         <Header />
         <main className='py-32 min-h-screen'>{children}</main>
         <Footer />
