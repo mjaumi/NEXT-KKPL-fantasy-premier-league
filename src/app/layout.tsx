@@ -31,7 +31,7 @@ export default function RootLayout({
         className={`${poppins.variable} font-poppins bg-KKPL-dark-blue text-white`}
       >
         <Header />
-        <main className='p-24 min-h-screen'>{children}</main>
+        <main className='py-32 min-h-screen'>{children}</main>
         <Footer />
       </body>
     </html>
