@@ -18,7 +18,10 @@ const config: Config = {
         'KKPL-light-red': '#EE2364',
         'KKPL-dark-grey': '#262D4A',
         'KKPL-light-grey': '#E0DDDC',
-      }
+      },
+      boxShadow: {
+        'KKPL-shadow': 'rgba(0, 0, 0, 0.24) 0px 3px 8px',
+      },
     },
   },
   plugins: [],

@@ -5,7 +5,7 @@ import React from 'react';
 interface IImage {
   src: string;
   alt: string;
-  priority: boolean;
+  priority?: boolean;
 }
 
 const KKPLImage = ({ src, alt, priority }: IImage) => {
@@ -17,7 +17,7 @@ const KKPLImage = ({ src, alt, priority }: IImage) => {
       height={0}
       width={0}
       sizes='100%'
-      priority={priority}
+      priority={priority && priority}
       alt={alt}
     />
   );
