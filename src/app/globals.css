@@ -3,3 +3,23 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/*---------------------------
+    scrollbar styles here
+---------------------------*/
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #ee2364;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #ee23639c;
+}
