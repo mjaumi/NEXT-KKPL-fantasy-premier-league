@@ -12,7 +12,7 @@ const KKPLImage = ({ src, alt, priority }: IImage) => {
   // rendering the image component here for abstraction purpose
   return (
     <Image
-      className='h-auto w-auto'
+      className='h-full w-full'
       src={src}
       height={0}
       width={0}

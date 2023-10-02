@@ -14,32 +14,32 @@ const TopPerformers = () => {
       <div className='w-[90%] lg:w-4/5 max-w-[1500px] mx-auto space-y-10'>
         <SectionTitle title='top performers' />
 
-        <div className='grid grid-cols-3 gap-12'>
+        <div className='grid grid-cols-1 md:grid-cols-3 gap-12'>
           <TopPerformerItem
             title='Batsman'
             playerName='Babar Azam'
             imgSrc='https://resources.pulse.icc-cricket.com/players/210/2759.png'
             stats={topBatsmanData}
-            imgStyle='-mr-8'
-            additionalClassName='mt-40'
+            imgStyle='-mr-8 w-[210px] md:w-fit'
+            additionalClassName='md:mt-40'
           />
           <TopPerformerItem
             title='Team'
             playerName='Gopalganj Kumrar Begunis'
-            imgSrc='/assets/images/gopalganj.png'
+            imgSrc='/assets/images/natore.png'
             stats={topTeamData}
             borderColor='border-KKPL-light-blue'
             textColor='text-KKPL-light-blue'
-            imgStyle='w-[150px] h-[150px] mr-5 mb-5'
-            additionalClassName='mb-40'
+            imgStyle='w-[100px] h-[100px] md:w-[150px] md:h-[150px] mr-5 mb-5'
+            additionalClassName='md:mb-40'
           />
           <TopPerformerItem
             title='Bowler'
             playerName='Mujeeb Ur Rahman'
             imgSrc='https://resources.pulse.icc-cricket.com/players/210/4572.png'
             stats={topBowlerData}
-            imgStyle='-mr-8'
-            additionalClassName='mt-40'
+            imgStyle='-mr-8 w-[210px] md:w-fit'
+            additionalClassName='md:mt-40'
           />
         </div>
       </div>
