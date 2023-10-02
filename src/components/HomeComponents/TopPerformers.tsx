@@ -21,7 +21,7 @@ const TopPerformers = () => {
             imgSrc='https://resources.pulse.icc-cricket.com/players/210/2759.png'
             stats={topBatsmanData}
             imgStyle='-mr-8 w-[190px]'
-            additionalClassName='2xl:mt-40'
+            additionalClassName='2xl:mt-32'
           />
           <TopPerformerItem
             title='Team'
@@ -31,7 +31,7 @@ const TopPerformers = () => {
             borderColor='border-KKPL-light-blue'
             textColor='text-KKPL-light-blue'
             imgStyle='w-[100px] h-[100px] md:w-[120px] md:h-[120px] xl:w-[150px] xl:h-[150px] mr-5 mb-5'
-            additionalClassName='2xl:mb-40'
+            additionalClassName='2xl:mb-32'
           />
           <TopPerformerItem
             title='Bowler'
@@ -39,7 +39,7 @@ const TopPerformers = () => {
             imgSrc='https://resources.pulse.icc-cricket.com/players/210/4572.png'
             stats={topBowlerData}
             imgStyle='-mr-8 w-[190px]'
-            additionalClassName='2xl:mt-40 col-span-1 md:col-span-2 2xl:col-span-1'
+            additionalClassName='2xl:mt-32 col-span-1 md:col-span-2 2xl:col-span-1'
           />
         </div>
       </div>
