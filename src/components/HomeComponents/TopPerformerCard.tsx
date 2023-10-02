@@ -16,7 +16,7 @@ interface ITopPerformer {
   }[];
 }
 
-const TopPerformerItem = ({
+const TopPerformerCard = ({
   title,
   playerName,
   imgSrc,
@@ -77,4 +77,4 @@ const TopPerformerItem = ({
   );
 };
 
-export default TopPerformerItem;
+export default TopPerformerCard;
