@@ -55,7 +55,7 @@ const MatchCard = ({ matchData }: { matchData: IMatchCard }) => {
         </p>
       )}
 
-      <div className='grid grid-cols-4 gap-10 p-5'>
+      <div className='grid grid-cols-1 xl:grid-cols-4 gap-y-10 xl:gap-x-5 2xl:gap-x-10 p-3 xl:p-5 w-full'>
         <div className='flex flex-col justify-between'>
           <div>
             <p className='text-lg'>{date}</p>
@@ -73,7 +73,7 @@ const MatchCard = ({ matchData }: { matchData: IMatchCard }) => {
         </div>
 
         <div className='space-y-3 col-span-2'>
-          <div className='flex items-center justify-between'>
+          <div className='flex flex-col md:flex-row items-start md:items-center justify-between'>
             <div className='flex items-center'>
               <div className='w-[60px]'>
                 <KKPLImage
@@ -95,7 +95,7 @@ const MatchCard = ({ matchData }: { matchData: IMatchCard }) => {
             </div>
 
             {team1.runs && (
-              <div className='flex items-end'>
+              <div className='flex items-end my-5 xl:my-0'>
                 <h3
                   className={`text-3xl font-bold ${
                     result &&
@@ -112,7 +112,7 @@ const MatchCard = ({ matchData }: { matchData: IMatchCard }) => {
               </div>
             )}
           </div>
-          <div className='flex items-center justify-between'>
+          <div className='flex flex-col md:flex-row items-start md:items-center justify-between'>
             <div className='flex items-center'>
               <div className='w-[60px]'>
                 <KKPLImage
@@ -134,7 +134,7 @@ const MatchCard = ({ matchData }: { matchData: IMatchCard }) => {
             </div>
 
             {team2.runs && (
-              <div className='flex items-end'>
+              <div className='flex items-end my-5 xl:my-0'>
                 <h3
                   className={`text-3xl font-bold ${
                     result &&
@@ -155,14 +155,14 @@ const MatchCard = ({ matchData }: { matchData: IMatchCard }) => {
 
         {hasFinished ? (
           <div className='flex justify-end items-center'>
-            <KKPLButton>
+            <KKPLButton additionalClassNames='w-full xl:w-fit'>
               View Details
               <BsArrowRight className='w-7 h-7 ml-2' />
             </KKPLButton>
           </div>
         ) : (
           <div className='flex justify-end items-center'>
-            <KKPLButton>
+            <KKPLButton additionalClassNames='w-full xl:w-fit'>
               Match centre
               <BsArrowRight className='w-7 h-7 ml-2' />
             </KKPLButton>

@@ -1,3 +1,4 @@
+// match card data are temporarily fetched from here
 export const match1CardData = {
   matchNo: '02',
   date: 'Monday October 23',
