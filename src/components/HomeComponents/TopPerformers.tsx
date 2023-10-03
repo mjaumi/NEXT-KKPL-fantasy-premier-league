@@ -17,7 +17,10 @@ const TopPerformers = () => {
         <div className='grid grid-cols-1 md:grid-cols-2 2xl:grid-cols-3 gap-5 xl:gap-12'>
           <TopPerformerCard
             title='Batsman'
-            playerName='Babar Azam'
+            name={{
+              firstName: 'Babar',
+              lastName: 'Azam',
+            }}
             imgSrc='https://resources.pulse.icc-cricket.com/players/210/2759.png'
             stats={topBatsmanData}
             imgStyle='2xl:-mr-8 w-[190px]'
@@ -25,7 +28,10 @@ const TopPerformers = () => {
           />
           <TopPerformerCard
             title='Team'
-            playerName='Gopalganj Kumrar Begunis'
+            name={{
+              firstName: 'Gopalganj',
+              lastName: 'Kumrar Begunis',
+            }}
             imgSrc='/assets/images/natore.png'
             stats={topTeamData}
             borderColor='border-KKPL-light-blue'
@@ -36,7 +42,10 @@ const TopPerformers = () => {
           />
           <TopPerformerCard
             title='Bowler'
-            playerName='Mujeeb Ur Rahman'
+            name={{
+              firstName: 'Mujeeb',
+              lastName: 'Ur Rahman',
+            }}
             imgSrc='https://resources.pulse.icc-cricket.com/players/210/4572.png'
             stats={topBowlerData}
             imgStyle='2xl:-mr-8 w-[190px]'

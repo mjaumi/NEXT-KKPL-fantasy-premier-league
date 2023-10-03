@@ -4,7 +4,10 @@ import KKPLImage from '../shared/KKPLImage';
 // datatype of top performer declared here
 interface ITopPerformer {
   title: string;
-  playerName: string;
+  name: {
+    firstName: string;
+    lastName: string;
+  };
   imgSrc: string;
   borderColor?: string;
   textColor?: string;
@@ -19,7 +22,7 @@ interface ITopPerformer {
 
 const TopPerformerCard = ({
   title,
-  playerName,
+  name,
   imgSrc,
   borderColor,
   textColor,
@@ -46,7 +49,10 @@ const TopPerformerCard = ({
           </h3>
         </div>
         <div>
-          <p className='text-base xl:text-2xl font-medium'>{playerName}</p>
+          <p className='text-base xl:text-2xl font-light'>
+            {name.firstName}{' '}
+            <span className='font-semibold'>{name.lastName}</span>
+          </p>
 
           <div className='grid grid-cols-3 mt-5'>
             {stats.map((stat, index) => (
@@ -75,7 +81,7 @@ const TopPerformerCard = ({
       <div className={`${imgStyle}`}>
         <KKPLImage
           src={imgSrc}
-          alt={playerName}
+          alt={`${name.firstName} ${name.lastName}'s image`}
           priority={hasPriority && hasPriority}
         />
       </div>
