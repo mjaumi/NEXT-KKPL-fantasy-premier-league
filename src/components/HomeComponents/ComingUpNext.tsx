@@ -36,13 +36,17 @@ const ComingUpNext = () => {
             <h3 className='text-3xl font-extrabold text-KKPL-light-red italic'>
               VS
             </h3>
-            <p className='flex items-center text-xs md:text-sm'>
-              <BsClock className='w-4 h-4 mr-2' />
-              MAY, MON 29, 02:30 pm BST
-            </p>
-            <div className='flex flex-col items-center'>
-              <StadiumIcon className='fill-white h-24 w-24' />
-              <p className='-mt-7 text-sm'>Narendra Modi Stadium, Ahmedabad</p>
+            <div className='hidden md:flex flex-col items-center text-center justify-center space-y-3'>
+              <p className='flex items-center text-xs md:text-sm'>
+                <BsClock className='w-4 h-4 mr-2' />
+                MAY, MON 29, 02:30 pm BST
+              </p>
+              <div className='flex flex-col items-center'>
+                <StadiumIcon className='fill-white h-24 w-24' />
+                <p className='-mt-7 text-sm'>
+                  Narendra Modi Stadium, Ahmedabad
+                </p>
+              </div>
             </div>
           </div>
 
@@ -57,6 +61,17 @@ const ComingUpNext = () => {
             <h3 className='mt-5 text-center text-lg lg:text-2xl font-light'>
               Natore <br /> Kachagollas
             </h3>
+          </div>
+
+          <div className='flex md:hidden flex-col items-center text-center justify-center space-y-3 py-5'>
+            <p className='flex items-center text-xs md:text-sm'>
+              <BsClock className='w-4 h-4 mr-2' />
+              MAY, MON 29, 02:30 pm BST
+            </p>
+            <div className='flex flex-col items-center'>
+              <StadiumIcon className='fill-white h-24 w-24' />
+              <p className='-mt-7 text-sm'>Narendra Modi Stadium, Ahmedabad</p>
+            </div>
           </div>
         </div>
 
