@@ -1,5 +1,7 @@
 import React from 'react';
+import { BsDot } from 'react-icons/bs';
 import KKPLImage from '../shared/KKPLImage';
+import ReactCountryFlag from 'react-country-flag';
 
 // datatype of top performer declared here
 interface ITopPerformer {
@@ -8,6 +10,8 @@ interface ITopPerformer {
     firstName: string;
     lastName: string;
   };
+  countryCode?: string;
+  teamName?: string;
   imgSrc: string;
   borderColor?: string;
   textColor?: string;
@@ -23,6 +27,8 @@ interface ITopPerformer {
 const TopPerformerCard = ({
   title,
   name,
+  countryCode,
+  teamName,
   imgSrc,
   borderColor,
   textColor,
@@ -34,11 +40,11 @@ const TopPerformerCard = ({
   // rendering top performer item component here
   return (
     <div
-      className={`border-2 rounded-xl bg-KKPL-dark-blue flex justify-between items-end ${
+      className={`border-2 rounded-xl bg-KKPL-dark-blue block 2xl:flex justify-between items-end ${
         borderColor ? borderColor : 'border-KKPL-light-red'
       } ${additionalClassName} cursor-pointer hover:scale-110 duration-300`}
     >
-      <div className='xl:flex-1 flex flex-col justify-between h-full py-5 pl-5'>
+      <div className='xl:flex-1 flex flex-col justify-between h-full py-5 pl-5 pr-5 2xl:pr-0'>
         <div>
           <h3
             className={`text-lg xl:text-2xl font-semibold ${
@@ -48,11 +54,40 @@ const TopPerformerCard = ({
             #01 {title}
           </h3>
         </div>
+
+        <div className='flex justify-center my-2'>
+          <div className={`${imgStyle} 2xl:hidden block`}>
+            <KKPLImage
+              src={imgSrc}
+              alt={`${name.firstName} ${name.lastName}'s image`}
+              priority={hasPriority && hasPriority}
+            />
+          </div>
+        </div>
+
         <div>
-          <p className='text-base xl:text-2xl font-light'>
-            {name.firstName}{' '}
-            <span className='font-semibold'>{name.lastName}</span>
-          </p>
+          <div>
+            <p className='text-base xl:text-2xl font-light'>
+              {name.firstName}{' '}
+              <span className='font-semibold'>{name.lastName}</span>
+            </p>
+            {countryCode && (
+              <div className='flex items-center text-xs md:text-sm text-KKPL-medium-grey'>
+                <ReactCountryFlag
+                  style={{
+                    height: '25px',
+                    width: '25px',
+                  }}
+                  countryCode={countryCode}
+                  title={countryCode}
+                  svg
+                />
+                <p className='ml-2'>{countryCode}</p>
+                <BsDot className='h-6 w-6' />
+                {teamName && <p>{teamName}</p>}
+              </div>
+            )}
+          </div>
 
           <div className='grid grid-cols-3 mt-5'>
             {stats.map((stat, index) => (
@@ -67,7 +102,7 @@ const TopPerformerCard = ({
               >
                 <p className='text-sm font-semibold'>{stat.statName}</p>
                 <h2
-                  className={`text-lg xl:text-3xl font-bold ${
+                  className={`text-2xl xl:text-3xl font-bold ${
                     textColor ? textColor : 'text-KKPL-light-red'
                   }`}
                 >
@@ -78,7 +113,7 @@ const TopPerformerCard = ({
           </div>
         </div>
       </div>
-      <div className={`${imgStyle}`}>
+      <div className={`${imgStyle} hidden 2xl:block`}>
         <KKPLImage
           src={imgSrc}
           alt={`${name.firstName} ${name.lastName}'s image`}

@@ -21,6 +21,8 @@ const TopPerformers = () => {
               firstName: 'Babar',
               lastName: 'Azam',
             }}
+            countryCode='PK'
+            teamName='Khulna'
             imgSrc='https://resources.pulse.icc-cricket.com/players/210/2759.png'
             stats={topBatsmanData}
             imgStyle='2xl:-mr-8 w-[190px]'
@@ -38,7 +40,7 @@ const TopPerformers = () => {
             textColor='text-KKPL-light-blue'
             hasPriority
             imgStyle='w-[100px] h-[100px] md:w-[120px] md:h-[120px] xl:w-[150px] xl:h-[150px] mr-5 mb-5'
-            additionalClassName='2xl:mb-32'
+            additionalClassName='hidden 2xl:block 2xl:mb-32'
           />
           <TopPerformerCard
             title='Bowler'
@@ -46,10 +48,26 @@ const TopPerformers = () => {
               firstName: 'Mujeeb',
               lastName: 'Ur Rahman',
             }}
+            countryCode='AF'
+            teamName='Gopalganj'
             imgSrc='https://resources.pulse.icc-cricket.com/players/210/4572.png'
             stats={topBowlerData}
             imgStyle='2xl:-mr-8 w-[190px]'
-            additionalClassName='2xl:mt-32 col-span-1 md:col-span-2 2xl:col-span-1'
+            additionalClassName='2xl:mt-32'
+          />
+          <TopPerformerCard
+            title='Team'
+            name={{
+              firstName: 'Gopalganj',
+              lastName: 'Kumrar Begunis',
+            }}
+            imgSrc='/assets/images/natore.png'
+            stats={topTeamData}
+            borderColor='border-KKPL-light-blue'
+            textColor='text-KKPL-light-blue'
+            hasPriority
+            imgStyle='w-[100px] h-[100px] md:w-[120px] md:h-[120px] xl:w-[150px] xl:h-[150px] mr-5 mb-5'
+            additionalClassName='block 2xl:hidden col-span-1 md:col-span-2'
           />
         </div>
       </div>
