@@ -17,6 +17,7 @@ const config: Config = {
         'KKPL-light-blue': '#00B1E5',
         'KKPL-light-red': '#EE2364',
         'KKPL-dark-grey': '#262D4A',
+        'KKPL-medium-grey': '#9EA2AE',
         'KKPL-light-grey': '#E0DDDC',
       },
       boxShadow: {
