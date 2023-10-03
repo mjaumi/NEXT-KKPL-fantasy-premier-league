@@ -10,6 +10,7 @@ interface ITopPerformer {
   textColor?: string;
   additionalClassName?: string;
   imgStyle: string;
+  hasPriority?: boolean;
   stats: {
     statName: string;
     statValue: string | number;
@@ -22,6 +23,7 @@ const TopPerformerCard = ({
   imgSrc,
   borderColor,
   textColor,
+  hasPriority,
   stats,
   imgStyle,
   additionalClassName,
@@ -71,7 +73,11 @@ const TopPerformerCard = ({
         </div>
       </div>
       <div className={`${imgStyle}`}>
-        <KKPLImage src={imgSrc} alt={playerName} />
+        <KKPLImage
+          src={imgSrc}
+          alt={playerName}
+          priority={hasPriority && hasPriority}
+        />
       </div>
     </div>
   );

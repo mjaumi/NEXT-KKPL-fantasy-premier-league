@@ -30,6 +30,7 @@ const TopPerformers = () => {
             stats={topTeamData}
             borderColor='border-KKPL-light-blue'
             textColor='text-KKPL-light-blue'
+            hasPriority
             imgStyle='w-[100px] h-[100px] md:w-[120px] md:h-[120px] xl:w-[150px] xl:h-[150px] mr-5 mb-5'
             additionalClassName='2xl:mb-32'
           />
