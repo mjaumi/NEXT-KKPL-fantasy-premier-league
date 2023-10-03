@@ -8,7 +8,7 @@ import { match2CardData } from '@/constants/matchCardData';
 const UpcomingMatches = () => {
   // rendering upcoming matches component here
   return (
-    <section className='relative w-[90%] lg:w-4/5 max-w-[1500px] mx-auto py-20 space-y-10'>
+    <section className='relative w-[90%] lg:w-4/5 max-w-[1500px] mx-auto py-20 mb-20 space-y-10'>
       <SectionTitle title='Upcoming Matches' />
 
       <div className='space-y-8'>

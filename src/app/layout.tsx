@@ -20,7 +20,7 @@ export default function RootLayout({
     <html lang='en'>
       <body className='font-poppins bg-KKPL-dark-blue text-white'>
         <Header />
-        <main className='py-32 min-h-screen'>{children}</main>
+        <main className='pt-32 min-h-screen'>{children}</main>
         <Footer />
       </body>
     </html>
