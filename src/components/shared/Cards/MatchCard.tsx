@@ -38,7 +38,7 @@ const MatchCard = ({ matchData }: { matchData: IMatchCard }) => {
 
   // rendering match card component here
   return (
-    <div className='border-2 bg-KKPL-dark-blue border-KKPL-light-red rounded-xl overflow-hidden'>
+    <div className='border-2 bg-KKPL-dark-blue border-KKPL-light-red rounded-xl overflow-hidden cursor-pointer hover:scale-110 duration-300'>
       {hasFinished && result && (
         <p className='bg-KKPL-light-red text-center py-1 text-sm'>
           <span className='font-semibold'>{result.winingTeam}</span> by{' '}

@@ -19,7 +19,7 @@ const PlayedMatches = () => {
           <MatchCard matchData={match1CardData} />
         </div>
 
-        <div className='absolute h-1/3 w-full bottom-0 bg-gradient-to-t from-KKPL-dark-purple z-20 to-transparent flex justify-center items-end'>
+        <div className='absolute h-2/5 w-full bottom-0 bg-gradient-to-t from-KKPL-dark-purple z-20 to-transparent flex justify-center items-end'>
           <KKPLButton>
             view all played matches
             <BsArrowRight className='w-7 h-7 ml-2' />
