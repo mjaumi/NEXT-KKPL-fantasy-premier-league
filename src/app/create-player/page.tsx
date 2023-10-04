@@ -1,3 +1,4 @@
+import CreateNewPlayer from '@/components/CreateNewPlayerComponents/CreateNewPlayer';
 import { Metadata } from 'next';
 
 // defining create new player page metadata here
@@ -10,7 +11,7 @@ export default function CreatePlayerPage() {
   // rendering the create player page here
   return (
     <>
-      <p>Add new Player here</p>
+      <CreateNewPlayer />
     </>
   );
 }
