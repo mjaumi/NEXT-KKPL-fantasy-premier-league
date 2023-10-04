@@ -27,7 +27,7 @@ const NavDropdownItem = ({ children, menu }: IDropDown) => {
               className={`block w-full p-2 text-center uppercase font-bold hover:bg-KKPL-light-grey duration-300 ${
                 index && 'border-t border-KKPL-light-grey'
               }`}
-              href={`/add-${menuItem}`}
+              href={`/create-${menuItem}`}
             >
               {menuItem}
             </Link>
