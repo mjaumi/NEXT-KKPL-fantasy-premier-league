@@ -6,7 +6,7 @@ import { Formik, Form } from 'formik';
 import KKPLButton from '../shared/KKPLButton';
 import KKPLSelectField from '../shared/Inputs/KKPLSelectField';
 
-const CreateNewPlayerForm = () => {
+const CreateNewPlayerForm = ({ countries }: { countries: Array<Country> }) => {
   // rendering create new player form component here
   return (
     <div className='w-full md:w-4/5 mx-auto mt-8 p-5 bg-KKPL-dark-purple border border-KKPL-light-red'>
@@ -62,11 +62,13 @@ const CreateNewPlayerForm = () => {
           </div>
 
           <div>
-            <KKPLInputField
+            <KKPLSelectField
               type='text'
               name='country'
               label={`player's country`}
               placeholder={`Enter Player's Country Here...`}
+              options={countries}
+              isReadOnly={false}
             />
           </div>
 
@@ -78,6 +80,7 @@ const CreateNewPlayerForm = () => {
                 label={`player's Role`}
                 placeholder={`Enter Player's Role Here...`}
                 options={['Batsman', 'Bowler', 'All Rounder']}
+                isReadOnly
               />
             </div>
             <div>
@@ -91,6 +94,7 @@ const CreateNewPlayerForm = () => {
                   'Left Handed Batsman',
                   'All Rounder',
                 ]}
+                isReadOnly
               />
             </div>
           </div>
