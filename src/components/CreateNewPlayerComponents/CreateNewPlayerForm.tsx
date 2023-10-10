@@ -5,6 +5,7 @@ import KKPLInputField from '../shared/Inputs/KKPLInputField';
 import { Formik, Form } from 'formik';
 import KKPLButton from '../shared/KKPLButton';
 import KKPLSelectField from '../shared/Inputs/KKPLSelectField';
+import { createPlayerSchema } from '@/schema';
 
 const CreateNewPlayerForm = ({ countries }: { countries: Array<Country> }) => {
   // rendering create new player form component here
@@ -20,7 +21,8 @@ const CreateNewPlayerForm = ({ countries }: { countries: Array<Country> }) => {
           playerRole: '',
           playerSubRole: '',
         }}
-        onSubmit={() => console.log('submit')}
+        validationSchema={createPlayerSchema}
+        onSubmit={(values) => console.log(values)}
       >
         <Form className='space-y-5'>
           <div className='grid grid-cols-1 md:grid-cols-2 gap-5'>
