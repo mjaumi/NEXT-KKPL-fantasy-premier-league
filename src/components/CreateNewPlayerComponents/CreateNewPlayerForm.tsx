@@ -8,7 +8,7 @@ import KKPLButton from '../shared/KKPLButton';
 const CreateNewPlayerForm = () => {
   // rendering create new player form component here
   return (
-    <div className='w-4/5 mx-auto mt-8 p-5 bg-KKPL-dark-purple border border-KKPL-light-red'>
+    <div className='w-full md:w-4/5 mx-auto mt-8 p-5 bg-KKPL-dark-purple border border-KKPL-light-red'>
       <Formik
         initialValues={{
           playerFirstName: '',
@@ -22,8 +22,8 @@ const CreateNewPlayerForm = () => {
         onSubmit={() => console.log('submit')}
       >
         <Form className='space-y-5'>
-          <div className='flex space-x-5'>
-            <div className='w-1/2'>
+          <div className='grid grid-cols-1 md:grid-cols-2 gap-5'>
+            <div>
               <KKPLInputField
                 type='text'
                 name='playerFirstName'
@@ -31,7 +31,7 @@ const CreateNewPlayerForm = () => {
                 placeholder={`Enter Player's First Name Here...`}
               />
             </div>
-            <div className='w-1/2'>
+            <div>
               <KKPLInputField
                 type='text'
                 name='playerLastName'
@@ -41,8 +41,8 @@ const CreateNewPlayerForm = () => {
             </div>
           </div>
 
-          <div className='flex space-x-5'>
-            <div className='w-1/2'>
+          <div className='grid grid-cols-1 md:grid-cols-2 gap-5'>
+            <div>
               <KKPLInputField
                 type='text'
                 name='playerPhoto'
@@ -50,7 +50,7 @@ const CreateNewPlayerForm = () => {
                 placeholder={`Enter Player's Photo URL Here...`}
               />
             </div>
-            <div className='w-1/2'>
+            <div>
               <KKPLInputField
                 type='text'
                 name='playerThumbNail'
@@ -69,8 +69,8 @@ const CreateNewPlayerForm = () => {
             />
           </div>
 
-          <div className='flex space-x-5'>
-            <div className='w-1/2'>
+          <div className='grid grid-cols-1 md:grid-cols-2 gap-5'>
+            <div>
               <KKPLInputField
                 type='text'
                 name='playerRole'
@@ -78,7 +78,7 @@ const CreateNewPlayerForm = () => {
                 placeholder={`Enter Player's Role Here...`}
               />
             </div>
-            <div className='w-1/2'>
+            <div>
               <KKPLInputField
                 type='text'
                 name='playerSubRole'
