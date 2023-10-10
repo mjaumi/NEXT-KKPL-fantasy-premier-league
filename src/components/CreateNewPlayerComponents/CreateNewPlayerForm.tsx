@@ -4,6 +4,7 @@ import React from 'react';
 import KKPLInputField from '../shared/Inputs/KKPLInputField';
 import { Formik, Form } from 'formik';
 import KKPLButton from '../shared/KKPLButton';
+import KKPLSelectField from '../shared/Inputs/KKPLSelectField';
 
 const CreateNewPlayerForm = () => {
   // rendering create new player form component here
@@ -71,19 +72,25 @@ const CreateNewPlayerForm = () => {
 
           <div className='grid grid-cols-1 md:grid-cols-2 gap-5'>
             <div>
-              <KKPLInputField
+              <KKPLSelectField
                 type='text'
                 name='playerRole'
                 label={`player's Role`}
                 placeholder={`Enter Player's Role Here...`}
+                options={['Batsman', 'Bowler', 'All Rounder']}
               />
             </div>
             <div>
-              <KKPLInputField
+              <KKPLSelectField
                 type='text'
                 name='playerSubRole'
-                label={`player's Sub role`}
-                placeholder={`Enter Player's sub role Here...`}
+                label={`player's Sub Role`}
+                placeholder={`Enter Player's sub Role Here...`}
+                options={[
+                  'Right Handed Batsman',
+                  'Left Handed Batsman',
+                  'All Rounder',
+                ]}
               />
             </div>
           </div>

@@ -1,5 +1,6 @@
 import React from 'react';
 
+// input field's datatype declared here
 interface IInputField {
   name: string;
   label: string;
