@@ -16,12 +16,12 @@ const KKPLButton = ({
   bgColor,
   additionalClassNames,
 }: IButton) => {
-  // rendering trademark button component here
+  // rendering custom button component here
   return (
     <button
       type={type ? type : 'button'}
       onClick={onCLick}
-      className={`relative px-8 py-3 font-semibold uppercase border-2 after:absolute after:h-full after:w-full after:left-0 after:top-0 after:origin-right hover:after:scale-x-0 after:duration-500 ${
+      className={`relative px-8 py-3 font-semibold uppercase border-2 after:absolute after:h-full after:w-full after:left-0 after:top-0 after:origin-right hover:after:scale-x-0 after:duration-500 active:scale-90 duration-300 ${
         bgColor ? bgColor : 'border-KKPL-light-red after:bg-KKPL-light-red'
       } ${additionalClassNames}`}
     >

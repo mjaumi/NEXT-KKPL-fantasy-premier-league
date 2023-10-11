@@ -3,7 +3,7 @@
 import React from 'react';
 import KKPLInputField from '../shared/Inputs/KKPLInputField';
 import { Formik, Form } from 'formik';
-import KKPLButton from '../shared/KKPLButton';
+import KKPLButton from '../shared/Buttons/KKPLButton';
 import KKPLSelectField from '../shared/Inputs/KKPLSelectField';
 import { createPlayerSchema } from '@/schema';
 

@@ -3,7 +3,7 @@ import { BsClock, BsArrowRight } from 'react-icons/bs';
 import KKPLImage from '../shared/KKPLImage';
 import SectionTitle from '../shared/SectionTitle';
 import StadiumIcon from '../shared/StadiumIcon';
-import KKPLButton from '../shared/KKPLButton';
+import KKPLButton from '../shared/Buttons/KKPLButton';
 
 const ComingUpNext = () => {
   // rendering coming up next match component here

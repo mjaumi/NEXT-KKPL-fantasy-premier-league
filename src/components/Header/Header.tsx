@@ -1,9 +1,10 @@
 import React from 'react';
 import NavItem from './NavItem';
 import MobileNavbar from './MobileNavbar';
-import KKPLButton from '../shared/KKPLButton';
+import KKPLButton from '../shared/Buttons/KKPLButton';
 import NavDropdownItem from './NavDropdownItem';
 import Link from 'next/link';
+import KKPLLinkButton from '../shared/Buttons/KKPLLinkButton';
 
 const Header = () => {
   // rendering the header component here
@@ -27,12 +28,13 @@ const Header = () => {
           <NavItem href='/point-table'>points table</NavItem>
           <NavItem href='/teams'>Teams</NavItem>
 
-          <KKPLButton
+          <KKPLLinkButton
+            href='/signin'
             bgColor='border-KKPL-light-blue after:bg-KKPL-light-blue'
             additionalClassNames='py-2'
           >
             log in
-          </KKPLButton>
+          </KKPLLinkButton>
         </nav>
 
         <MobileNavbar />

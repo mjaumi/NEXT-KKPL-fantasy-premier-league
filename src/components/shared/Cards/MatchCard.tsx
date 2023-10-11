@@ -1,7 +1,7 @@
 import React from 'react';
 import { BsArrowRight } from 'react-icons/bs';
 import KKPLImage from '../KKPLImage';
-import KKPLButton from '../KKPLButton';
+import KKPLButton from '../Buttons/KKPLButton';
 
 // match card team datatype declared here
 interface IMatchCardTeam {

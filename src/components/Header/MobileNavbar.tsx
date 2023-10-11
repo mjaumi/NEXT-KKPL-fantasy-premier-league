@@ -3,7 +3,7 @@
 import React, { useState } from 'react';
 import NavItem from './NavItem';
 import { HiMenuAlt1 } from 'react-icons/hi';
-import KKPLButton from '../shared/KKPLButton';
+import KKPLButton from '../shared/Buttons/KKPLButton';
 import { AiOutlineClose } from 'react-icons/ai';
 import NavDropdownItem from './NavDropdownItem';
 

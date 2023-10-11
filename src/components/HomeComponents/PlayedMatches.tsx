@@ -2,7 +2,7 @@ import React from 'react';
 import SectionTitle from '../shared/SectionTitle';
 import MatchCard from '../shared/Cards/MatchCard';
 import { match1CardData } from '@/constants/matchCardData';
-import KKPLButton from '../shared/KKPLButton';
+import KKPLButton from '../shared/Buttons/KKPLButton';
 import { BsArrowRight } from 'react-icons/bs';
 
 const PlayedMatches = () => {

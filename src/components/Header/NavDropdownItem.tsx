@@ -24,7 +24,7 @@ const NavDropdownItem = ({ children, menu }: IDropDown) => {
           index ? (
             <Link
               key={index}
-              className={`block w-full p-2 text-center uppercase font-bold hover:bg-KKPL-light-grey duration-300 ${
+              className={`block w-full p-2 text-center uppercase font-bold hover:bg-KKPL-light-grey duration-300 active:scale-90 ${
                 index && 'border-t border-KKPL-light-grey'
               }`}
               href={`/create-${menuItem}`}
@@ -34,7 +34,7 @@ const NavDropdownItem = ({ children, menu }: IDropDown) => {
           ) : (
             <button
               key={index}
-              className='block w-full p-2 text-center uppercase font-bold hover:bg-KKPL-light-grey duration-300'
+              className='block w-full p-2 text-center uppercase font-bold hover:bg-KKPL-light-grey duration-300 active:scale-90'
             >
               {menuItem}
             </button>

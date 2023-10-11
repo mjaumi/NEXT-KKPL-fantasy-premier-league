@@ -1,6 +1,6 @@
 import React from 'react';
 import { BsArrowRight } from 'react-icons/bs';
-import KKPLButton from '../shared/KKPLButton';
+import KKPLButton from '../shared/Buttons/KKPLButton';
 import SectionTitle from '../shared/SectionTitle';
 import MatchCard from '../shared/Cards/MatchCard';
 import { match2CardData } from '@/constants/matchCardData';
