@@ -10,15 +10,15 @@ const SigninForm = () => {
   // rendering sign in form component here
   return (
     <section className='h-screen w-full'>
-      <div className='w-4/5 h-fit mx-auto'>
+      <div className='w-[90%] md:w-4/5 h-fit mx-auto'>
         <SectionTitle title='Sign into your account' />
       </div>
-      <div className='w-full md:w-2/5 mx-auto p-5 bg-KKPL-dark-purple border border-KKPL-light-red mt-20'>
+      <div className='w-[90%] md:w-4/5 xl:w-2/5 mx-auto p-5 bg-KKPL-dark-purple border border-KKPL-light-red mt-20'>
         <div className='mb-10'>
-          <h1 className='text-KKPL-light-blue uppercase text-4xl font-semibold'>
+          <h1 className='text-KKPL-light-blue uppercase text-2xl md:text-4xl font-semibold'>
             sign in
           </h1>
-          <p className='text-sm text-KKPL-light-grey'>
+          <p className='text-xs md:text-sm text-KKPL-light-grey'>
             Sign in to your account using email and password here...
           </p>
         </div>
