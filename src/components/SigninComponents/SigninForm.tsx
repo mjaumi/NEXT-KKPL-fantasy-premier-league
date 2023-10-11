@@ -5,6 +5,7 @@ import React from 'react';
 import KKPLInputField from '../shared/Inputs/KKPLInputField';
 import KKPLButton from '../shared/Buttons/KKPLButton';
 import SectionTitle from '../shared/SectionTitle';
+import { signinFormSchema } from '@/schema';
 
 const SigninForm = () => {
   // rendering sign in form component here
@@ -28,7 +29,8 @@ const SigninForm = () => {
             email: '',
             password: '',
           }}
-          onSubmit={() => console.log('submit')}
+          validationSchema={signinFormSchema}
+          onSubmit={(values) => console.log(values)}
         >
           <Form className='space-y-5'>
             <div>
