@@ -33,7 +33,7 @@ const Header = () => {
             bgColor='border-KKPL-light-blue after:bg-KKPL-light-blue'
             additionalClassNames='py-2'
           >
-            log in
+            sign in
           </KKPLLinkButton>
         </nav>
 

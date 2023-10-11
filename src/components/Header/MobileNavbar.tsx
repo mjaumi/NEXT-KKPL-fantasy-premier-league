@@ -3,9 +3,9 @@
 import React, { useState } from 'react';
 import NavItem from './NavItem';
 import { HiMenuAlt1 } from 'react-icons/hi';
-import KKPLButton from '../shared/Buttons/KKPLButton';
 import { AiOutlineClose } from 'react-icons/ai';
 import NavDropdownItem from './NavDropdownItem';
+import KKPLLinkButton from '../shared/Buttons/KKPLLinkButton';
 
 const MobileNavbar = () => {
   // integration of react hooks here
@@ -38,12 +38,13 @@ const MobileNavbar = () => {
         <NavItem href='/point-table'>points table</NavItem>
         <NavItem href='/teams'>Teams</NavItem>
 
-        <KKPLButton
+        <KKPLLinkButton
+          href='/signin'
           bgColor='border-KKPL-light-blue after:bg-KKPL-light-blue'
           additionalClassNames='py-2'
         >
-          log in
-        </KKPLButton>
+          sign in
+        </KKPLLinkButton>
       </div>
     </nav>
   );
