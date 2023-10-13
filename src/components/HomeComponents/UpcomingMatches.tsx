@@ -1,9 +1,9 @@
 import React from 'react';
 import { BsArrowRight } from 'react-icons/bs';
-import KKPLButton from '../shared/Buttons/KKPLButton';
 import SectionTitle from '../shared/SectionTitle';
 import MatchCard from '../shared/Cards/MatchCard';
 import { match2CardData } from '@/constants/matchCardData';
+import KKPLLinkButton from '../shared/Buttons/KKPLLinkButton';
 
 const UpcomingMatches = () => {
   // rendering upcoming matches component here
@@ -21,10 +21,10 @@ const UpcomingMatches = () => {
         </div>
 
         <div className='absolute h-2/5 w-full bottom-0 bg-gradient-to-t from-KKPL-dark-blue z-20 to-transparent flex justify-center items-end'>
-          <KKPLButton>
+          <KKPLLinkButton href='/matches' additionalClassNames='py-3'>
             view all upcoming matches
             <BsArrowRight className='w-7 h-7 ml-2' />
-          </KKPLButton>
+          </KKPLLinkButton>
         </div>
       </div>
     </section>
