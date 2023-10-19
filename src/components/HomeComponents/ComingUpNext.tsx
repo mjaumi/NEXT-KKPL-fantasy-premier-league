@@ -4,6 +4,7 @@ import KKPLImage from '../shared/KKPLImage';
 import SectionTitle from '../shared/SectionTitle';
 import StadiumIcon from '../shared/StadiumIcon';
 import KKPLButton from '../shared/Buttons/KKPLButton';
+import KKPLLinkButton from '../shared/Buttons/KKPLLinkButton';
 
 const ComingUpNext = () => {
   // rendering coming up next match component here
@@ -76,10 +77,10 @@ const ComingUpNext = () => {
         </div>
 
         <div className='flex justify-end'>
-          <KKPLButton additionalClassNames='w-full md:w-fit'>
+          <KKPLLinkButton href='/live-match' additionalClassNames='py-3'>
             <p>Play Match</p>
             <BsArrowRight className='w-7 h-7' />
-          </KKPLButton>
+          </KKPLLinkButton>
         </div>
       </div>
     </section>
