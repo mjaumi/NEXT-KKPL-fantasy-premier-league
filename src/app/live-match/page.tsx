@@ -1,3 +1,4 @@
+import SectionTitle from '@/components/shared/SectionTitle';
 import { Metadata } from 'next';
 
 // defining live match page metadata here
@@ -10,7 +11,7 @@ export default function LiveMatchPage() {
   // rendering the live match page here
   return (
     <section className='w-[90%] lg:w-4/5 max-w-[1500px] mx-auto'>
-      <p>live match</p>
+      <SectionTitle title='live match' />
     </section>
   );
 }
