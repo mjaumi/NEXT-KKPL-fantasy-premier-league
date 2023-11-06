@@ -1,3 +1,4 @@
+import SectionTitle from '@/components/shared/SectionTitle';
 import { Metadata } from 'next';
 
 // defining live match page metadata here
@@ -9,8 +10,8 @@ export const metadata: Metadata = {
 export default function StatisticsPage() {
   // rendering statistics page here
   return (
-    <>
-      <p>statistics page</p>
-    </>
+    <section className='w-[90%] lg:w-4/5 max-w-[1500px] mx-auto'>
+      <SectionTitle title='Statistics' />
+    </section>
   );
 }
