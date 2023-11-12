@@ -9,7 +9,7 @@ export const metadata: Metadata = {
 export default function PointsTablePage() {
   // rendering the points table page here
   return (
-    <section>
+    <section className='w-[90%] lg:w-4/5 max-w-[1500px] mx-auto'>
       <h1>points table</h1>
     </section>
   );
