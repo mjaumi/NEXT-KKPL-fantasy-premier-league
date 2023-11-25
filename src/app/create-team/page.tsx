@@ -1,3 +1,4 @@
+import SectionTitle from '@/components/shared/SectionTitle';
 import { Metadata } from 'next';
 
 // defining live match page metadata here
@@ -10,7 +11,7 @@ export default function CreateTeamPage() {
   // rendering the create team page here
   return (
     <section>
-      <h1>create team page</h1>
+      <SectionTitle title='Create New Team' />
     </section>
   );
 }
