@@ -1,3 +1,4 @@
+import CreateNewTeam from '@/components/CreateNewTeamComponents/CreateNewTeam';
 import SectionTitle from '@/components/shared/SectionTitle';
 import { Metadata } from 'next';
 
@@ -10,8 +11,8 @@ export const metadata: Metadata = {
 export default function CreateTeamPage() {
   // rendering the create team page here
   return (
-    <section>
-      <SectionTitle title='Create New Team' />
-    </section>
+    <>
+      <CreateNewTeam />
+    </>
   );
 }

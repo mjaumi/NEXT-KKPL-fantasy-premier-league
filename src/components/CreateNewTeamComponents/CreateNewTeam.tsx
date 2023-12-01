@@ -3,9 +3,9 @@ import React from 'react';
 const CreateNewTeam = () => {
   // rendering create new team component here
   return (
-    <div>
+    <section>
       <p>new team</p>
-    </div>
+    </section>
   );
 };
 
