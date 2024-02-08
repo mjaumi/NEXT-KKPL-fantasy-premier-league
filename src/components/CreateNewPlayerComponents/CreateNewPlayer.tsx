@@ -1,7 +1,6 @@
-import React from 'react';
+import { getAllCountries } from '@/actions/misc';
 import SectionTitle from '../shared/SectionTitle';
 import CreateNewPlayerForm from './CreateNewPlayerForm';
-import { getAllCountries } from '@/actions/serverActions';
 
 const CreateNewPlayer = async () => {
   // fetching the countries data here
