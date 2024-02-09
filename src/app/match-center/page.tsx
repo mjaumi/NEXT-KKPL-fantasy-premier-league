@@ -9,5 +9,9 @@ export const metadata: Metadata = {
 
 export default function MatchCenterPage() {
   // rendering match center page here
-  return <SectionTitle title='Match Center' />;
+  return (
+    <>
+      <SectionTitle title='Match Center' />
+    </>
+  );
 }
