@@ -13,7 +13,7 @@ const CreateNewTeamForm = () => {
             <div>
               <KKPLInputField
                 type='text'
-                name='country'
+                name='team'
                 label={`Teams's Name`}
                 placeholder={`Enter Team's Name Here...`}
               />
