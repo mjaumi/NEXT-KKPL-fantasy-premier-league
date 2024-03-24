@@ -1,11 +1,10 @@
 'use client';
 
-import React from 'react';
-import KKPLInputField from '../shared/Inputs/KKPLInputField';
-import { Formik, Form } from 'formik';
-import KKPLButton from '../shared/Buttons/KKPLButton';
-import KKPLSelectField from '../shared/Inputs/KKPLSelectField';
 import { createPlayerSchema } from '@/schema';
+import { Form, Formik } from 'formik';
+import KKPLButton from '../shared/Buttons/KKPLButton';
+import KKPLInputField from '../shared/Inputs/KKPLInputField';
+import KKPLSelectField from '../shared/Inputs/KKPLSelectField';
 
 const CreateNewPlayerForm = ({ countries }: { countries: Array<Country> }) => {
   // rendering create new player form component here
@@ -13,7 +12,7 @@ const CreateNewPlayerForm = ({ countries }: { countries: Array<Country> }) => {
     <div className='w-full md:w-4/5 mx-auto mt-8 p-5 bg-KKPL-dark-purple border border-KKPL-light-red'>
       <Formik
         initialValues={{
-          playerFirstName: '',
+          player_first_name: '',
           playerLastName: '',
           playerPhoto: '',
           playerThumbNail: '',
@@ -29,7 +28,7 @@ const CreateNewPlayerForm = ({ countries }: { countries: Array<Country> }) => {
             <div>
               <KKPLInputField
                 type='text'
-                name='playerFirstName'
+                name='player_first_name'
                 label={`player's first name`}
                 placeholder={`Enter Player's First Name Here...`}
               />
